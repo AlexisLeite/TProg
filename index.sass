@@ -1,0 +1,60 @@
+$primary: red
+
+$spacing-1: 4px
+$spacing-2: 8px
+$spacing-3: 12px
+$spacing-4: 16px
+$spacing-5: 24px
+
+html, body
+  margin: 0
+
+body
+  display: flex
+  flex-direction: column
+  gap: $spacing-5
+  
+nav
+  a.nav-link
+    padding: $spacing-2
+
+    &:hover
+      background: #ddf3
+
+  h3
+    font-size: 18px
+    padding: $spacing-3 0
+    padding-bottom: $spacing-1
+    border-bottom: 1px solid #aaa9
+
+#MainContent
+  min-height: calc(100vh - 176px)
+
+  & > .row
+    gap: $spacing-3
+    flex-wrap: nowrap
+
+  main
+    display: flex
+    flex-direction: column
+    gap: $spacing-5
+    flex-shrink: 1
+
+.separator
+  border-top: 1px solid #aaa5 
+
+.card-full
+  .image-container
+    height: 250px
+    overflow: hidden
+
+.right-navbar
+  background: #00000009
+
+.profile-image
+  width: 100%
+
+form
+  .form-buttons
+    display: flex
+    justify-content: end

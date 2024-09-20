@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href=".">Volando.uy</a>
+        <form class="d-flex mx-auto" style="max-width: 500px;">
+          <input class="form-control me-2" type="search" placeholder="Introduzca la búsqueda">
+          <button class="btn btn-secondary" type="submit">Buscar</button>
+        </form>
+        <div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="navbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="https://via.placeholder.com/40" alt="User Avatar" class="rounded-circle me-2"
+                    style="width: 40px; height: 40px;">
+                  <span>John Doe</span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="./perfil.html">Perfil</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="/">Cerrar sesión</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div id="MainContent" class="container">
+      <div class="row">
+        <nav class="col-md-3">
+          <h3>Catálogo</h3>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="./paquetes.html" class="nav-link" href="#">Paquetes de
+                rutas</a>
+            </li>
+            <li class="nav-item">
+              <a href="./" class="nav-link" href="#">Rutas de
+                vuelo</a>
+            </li>
+            <li class="nav-item">
+              <a href="./usuarios.html" class="nav-link" href="#">Usuarios</a>
+            </li>
+            <li class="nav-item">
+              <a href="./vuelos.html" class="nav-link" href="#">Vuelos</a>
+            </li>
+          </ul>
+          <h3>Acciones</h3>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="./comprar-paquete.html" class="nav-link" href="#">Comprar
+                paquete</a>
+            </li>
+            <li class="nav-item">
+              <a href="./consulta-de-reserva.html" class="nav-link" href="#">Consulta de
+                reserva</a>
+            </li>
+            <li class="nav-item">
+              <a href="./reservar-vuelo.html" class="nav-link" href="#">Reservar
+                vuelo</a>
+            </li>
+          </ul>
+          <h3>Categorías</h3>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href=".?cat=123" class="nav-link">Internacionales</a>
+            </li>
+            <li class="nav-item">
+              <a href=".?cat=123" class="nav-link">América</a>
+            </li>
+            <li class="nav-item">
+              <a href=".?cat=123" class="nav-link">Europa</a>
+            </li>
+            <li class="nav-item">
+              <a href=".?cat=123" class="nav-link">Cortos</a>
+            </li>
+            <li class="nav-item">
+              <a href=".?cat=123" class="nav-link">Largos</a>
+            </li>
+            <li class="nav-item">
+              <a href=".?cat=123" class="nav-link">Económicos</a>
+            </li>
+            <li class="nav-item">
+              <a href=".?cat=123" class="nav-link">Familiares</a>
+            </li>
+            <li class="nav-item">
+              <a href=".?cat=123" class="nav-link">Negocios</a>
+            </li>
+          </ul>
+        </nav>
+
+        <main class="col-md-6">
+
+          <div class="container mt-3">
+            <div class="row">
+              <div class="col-md-4">
+                <img src="https://via.placeholder.com/150" alt="Imagen del usuario"
+                  class="img-fluid rounded profile-image">
+              </div>
+              <div class="col-md-8">
+                <h2>Aerolínea del sol</h2>
+                <p><strong>Email:</strong> juan.perez@example.com</p>
+                <p><strong>País:</strong> Uruguay</p>
+                <p><strong>Vuelos completados:</strong> 15</p>
+                <p><strong>Miembro desde:</strong> Enero 2020</p>
+                <p><strong>Tipo de viajero:</strong> Viajero frecuente</p>
+                <p><strong>Comentarios:</strong> Excelente servicio, siempre elijo esta aerolínea para mis viajes.</p>
+              </div>
+            </div>
+
+          </div>
+
+        </main>
+
+        <nav class="col-md-3 right-navbar">
+          <h3>Relacionado</h3>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link d-flex gap-3 align-items-center" href="./paquete.html?id=123">
+                <i class="bi bi-box-fill"></i>
+                <div>
+                  <strong>Paquete de rutas</strong>
+                  <div>Recorrer sudamérica</div>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex gap-3 align-items-center" href="./paquete.html?id=123">
+                <i class="bi bi-box-fill"></i>
+                <div>
+                  <strong>Paquete de rutas</strong>
+                  <div>Recorrer sudamérica</div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <footer class="bg-light text-center text-lg-start">
+      <div class="text-center p-3">
+        © 2024 Copyright:
+        <a class="text-dark" href="#">TuSitioWeb.com</a>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  </body>
+
+</html>
