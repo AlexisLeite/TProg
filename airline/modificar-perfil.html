@@ -114,16 +114,54 @@
                   class="img-fluid rounded profile-image">
               </div>
               <div class="col-md-8">
-                <h2>Aerolíneas argentinas</h2>
-                <p><strong>Email:</strong> juan.perez@example.com</p>
-                <p><strong>País:</strong> Uruguay</p>
-                <p><strong>Vuelos completados:</strong> 15</p>
-                <p><strong>Miembro desde:</strong> Enero 2020</p>
-                <p><strong>Tipo de viajero:</strong> Viajero frecuente</p>
-                <p><strong>Comentarios:</strong> Excelente servicio, siempre elijo esta aerolínea para mis viajes.</p>
-                <form action="./modificar-perfil.html" methods="get">
-                  <button class="btn btn-primary">Modificar datos</button>
-                </form>
+                <div class="col-md-8">
+                  <h2>Editar Información</h2>
+                  <form action="./aerolinea.html" method="GET">
+                    <div class="mb-3">
+                      <label for="nombre" class="form-label">Nombre completo</label>
+                      <input type="text" class="form-control" id="nombre" name="nombre" value="Aerolíneas argentinas"
+                        required>
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="email" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="email" name="email" value="juan.perez@example.com"
+                        required>
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="pais" class="form-label">País</label>
+                      <input type="text" class="form-control" id="pais" name="pais" value="Uruguay" required>
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="vuelos" class="form-label">Vuelos completados</label>
+                      <input type="number" class="form-control" id="vuelos" name="vuelos" value="15" required>
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="miembro" class="form-label">Miembro desde</label>
+                      <input type="text" class="form-control" id="miembro" name="miembro" value="Enero 2020" disabled>
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="tipo-viajero" class="form-label">Tipo de viajero</label>
+                      <select class="form-select" id="tipo-viajero" name="tipo-viajero" required>
+                        <option value="Viajero frecuente" selected>Viajero frecuente</option>
+                        <option value="Viajero ocasional">Viajero ocasional</option>
+                        <option value="Viajero ejecutivo">Viajero ejecutivo</option>
+                      </select>
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="comentarios" class="form-label">Comentarios</label>
+                      <textarea class="form-control" id="comentarios" name="comentarios"
+                        rows="3">Excelente servicio, siempre elijo esta aerolínea para mis viajes.</textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Guardar cambios</button>
+                  </form>
+                </div>
               </div>
             </div>
 
