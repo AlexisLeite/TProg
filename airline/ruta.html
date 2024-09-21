@@ -10,7 +10,7 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+    <nav id="MainHeader" class="navbar navbar-dark bg-dark navbar-expand-lg">
       <div class="container">
         <a class="navbar-brand" href=".">Volando.uy</a>
         <form class="d-flex mx-auto" style="max-width: 500px;">
@@ -29,10 +29,10 @@
                   data-bs-toggle="dropdown" aria-expanded="false">
                   <img src="https://via.placeholder.com/40" alt="User Avatar" class="rounded-circle me-2"
                     style="width: 40px; height: 40px;">
-                  <span>Juan Pérez</span>
+                  <span>Aerolíneas argentinas</span>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="./perfil.html">Perfil</a></li>
+                  <li><a class="dropdown-item" href="./aerolinea.html">Perfil</a></li>
                   <li>
                     <hr class="dropdown-divider">
                   </li>
@@ -68,16 +68,13 @@
           <h3>Acciones</h3>
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a href="./comprar-paquete.html" class="nav-link" href="#">Comprar
-                paquete</a>
+              <a href="./alta-ruta-vuelo.html" class="nav-link" href="#">Alta de ruta de vuelo</a>
             </li>
             <li class="nav-item">
-              <a href="./reservas.html" class="nav-link" href="#">Consulta de
-                reserva</a>
+              <a href="./alta-vuelo.html" class="nav-link" href="#">Alta de vuelo</a>
             </li>
             <li class="nav-item">
-              <a href="./reservar-vuelo.html" class="nav-link" href="#">Reservar
-                vuelo</a>
+              <a href="./reservas.html" class="nav-link" href="#">Reservas</a>
             </li>
           </ul>
           <h3>Categorías</h3>
@@ -109,21 +106,20 @@
           </ul>
         </nav>
 
-        <main class="col-md-7">
-
+        <main class="col-md-6">
+          <h1>Detalle de ruta de vuelo</h1>
+          <h2>Montevideo-Rio de
+            Janeiro por ZulyFly</h2>
+          <p>
+            Tiempo estimado de vuelo 2 horas y
+            30 minutos, vuelo directo.
+          </p>
           <div class="card mb-3 card-full">
             <div class="image-container">
               <img src="https://via.placeholder.com/600x400" alt="Imagen"
                 style="width: 100%; height: 100%; object-fit: cover;object-position: left;">
             </div>
             <div class="card-body">
-              <h5 class="card-title">ZL1502</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Montevideo-Rio de
-                Janeiro por ZulyFly</h6>
-              <p class="card-text">
-                <strong>Descripción:</strong> Tiempo estimado de vuelo 2 horas y
-                30 minutos, vuelo directo.
-              </p>
               <p class="card-text">
                 <strong>Ciudad origen:</strong> Montevideo, Uruguay
                 (Carrasco)<br>
@@ -145,7 +141,6 @@
         </main>
 
         <nav class="col-md-3 right-navbar">
-
           <h3>Relacionado</h3>
           <ul class="navbar-nav">
             <li class="nav-item">
@@ -155,6 +150,58 @@
                   <strong>Aerolínea</strong><br>
                   <div>American airlines</div>
                 </div>
+              </a>
+            </li>
+            <div class="separator"></div>
+            <li class="nav-item">
+              <a class="nav-link d-flex gap-3 align-items-center" href="./paquete.html?id=123">
+                <i class="bi bi-box-fill"></i>
+                <div>
+                  <strong>Paquete de rutas</strong>
+                  <div>Recorrer sudamérica</div>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex gap-3 align-items-center" href="./paquete.html?id=123">
+                <i class="bi bi-box-fill"></i>
+                <div>
+                  <strong>Paquete de rutas</strong>
+                  <div>Recorrer sudamérica</div>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <h3>Próximos vuelos</h3>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="./vuelo.html?id=444" class="nav-link" href="#"><strong>C424</strong>
+                <div>Miércoles
+                  22, 14hs</div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="./vuelo.html?id=444" class="nav-link" href="#"><strong>ZL1502</strong>
+                <div>Jueves
+                  23, 10hs</div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="./vuelo.html?id=444" class="nav-link" href="#"><strong>R125</strong>
+                <div>Viernes
+                  24, 08hs</div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="./vuelo.html?id=444" class="nav-link" href="#"><strong>A987</strong>
+                <div>Sábado 25,
+                  16hs</div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="./vuelo.html?id=444" class="nav-link" href="#"><strong>F654</strong>
+                <div>Domingo
+                  26, 09hs</div>
               </a>
             </li>
           </ul>
@@ -170,6 +217,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
   </body>
 

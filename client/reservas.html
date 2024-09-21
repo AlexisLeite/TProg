@@ -29,7 +29,7 @@
                   data-bs-toggle="dropdown" aria-expanded="false">
                   <img src="https://via.placeholder.com/40" alt="User Avatar" class="rounded-circle me-2"
                     style="width: 40px; height: 40px;">
-                  <span>John Doe</span>
+                  <span>Juan Pérez</span>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="./perfil.html">Perfil</a></li>
@@ -72,7 +72,7 @@
                 paquete</a>
             </li>
             <li class="nav-item">
-              <a href="./consulta-de-reserva.html" class="nav-link" href="#">Consulta de
+              <a href="./reservas.html" class="nav-link" href="#">Consulta de
                 reserva</a>
             </li>
             <li class="nav-item">
@@ -111,7 +111,38 @@
 
         <main class="col-md-9">
           <div class="container mt-4">
-            <h2>Mis Reservas</h2>
+            <h2>Consultar reservas</h2>
+
+            <div class="dropdown text-end">
+              <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-funnel"></i> Filtrar Reservas
+              </button>
+
+              <ul class="dropdown-menu p-4" aria-labelledby="dropdownMenuButton">
+                <form action="./reservas.html" method="get">
+                  <div class="mb-3">
+                    <label for="ruta" class="form-label">Selecciona la aerolínea</label>
+                    <select class="form-select" id="aerolinea" name="ruta" required>
+                      <option value="">Selecciona una aerolínea</option>
+                      <option value="1">Aerolíneas argentinas</option>
+                      <option value="2">Aviones pepe</option>
+                    </select>
+                    <select class="form-select" id="ruta" name="ruta" required>
+                      <option value="">Selecciona una ruta</option>
+                      <option value="1">Montevideo - Río de Janeiro</option>
+                      <option value="2">Buenos Aires - Santiago</option>
+                      <option value="3">Lima - Sao Paulo</option>
+                      <option value="4">Bogotá - Ciudad de México</option>
+                      <option value="5">Quito - Lima</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <button type="submit" class="btn btn-primary w-100">Aplicar Filtro</button>
+                  </div>
+                </form>
+              </ul>
+            </div>
 
             <div class="list-group">
               <a href="reserva.html?id=1" class="list-group-item list-group-item-action">

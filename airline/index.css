@@ -1,0 +1,60 @@
+html, body {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+nav a.nav-link {
+  padding: 8px;
+}
+nav a.nav-link:hover {
+  background: rgba(221, 221, 255, 0.2);
+}
+nav h3 {
+  font-size: 18px;
+  padding: 12px 0;
+  padding-bottom: 4px;
+  border-bottom: 1px solid rgba(170, 170, 170, 0.6);
+}
+
+#MainContent {
+  min-height: calc(100vh - 176px);
+}
+#MainContent > .row {
+  gap: 12px;
+  flex-wrap: nowrap;
+}
+#MainContent main {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex-shrink: 1;
+}
+
+.separator {
+  border-top: 1px solid rgba(170, 170, 170, 0.3333333333);
+}
+
+.card-full .image-container {
+  height: 250px;
+  overflow: hidden;
+}
+
+.right-navbar {
+  background: rgba(0, 0, 0, 0.0352941176);
+}
+
+.profile-image {
+  width: 100%;
+}
+
+form .form-buttons {
+  display: flex;
+  justify-content: end;
+}
+
+/*# sourceMappingURL=index.css.map */
